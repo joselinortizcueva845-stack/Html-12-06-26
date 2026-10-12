@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <head>
-    <title>TITULO</title>
-    <link href="estilos.css"/>
+   <title>Interfaz del Proyecto</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
-<script arc="script.js"> </script>
 <body>
-    <p>This is one class of full stack</p>
-</body>
+    <!-- Encabezado de la página -->
+    <header>
+        <h1 id="titulo">Sistema de Procesamiento</h1>
+        <p>Introduce un comando para empezar.</p>
+    </header>
 
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección para que el usuario interactúe -->
+        <section class="interfaz-entrada">
+            <label for="entradaDatos">Tu consulta:</label>
+            <input type="text" id="entradaDatos" placeholder="Ej. Analizar estos datos...">
+            <button id="miBoton">Ejecutar</button>
+        </section>
+
+        <!-- Sección donde se mostrará la respuesta -->
+        <section class="panel-resultados">
+            <h2>Respuesta del Sistema:</h2>
+            <div id="cajaResultado">
+                <p>Esperando instrucciones...</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 - Desarrollo en progreso</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
